@@ -1,0 +1,122 @@
+.IndexPageContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+
+    .IndexPageHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+        color: black;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 3px;
+
+        .IndexPageHeaderTitle {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 10%;
+            width: 100%;
+
+            h1 {
+                text-align: center;
+                padding: 10px 10px;
+            }
+        }
+
+
+        .IndexPageHeaderStages {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 80%;
+            height: 80%;
+
+            span {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                :first-child {
+                    margin-right: 5px;
+                }
+
+                .IndexPageHeaderStagesNumber {
+                    color: white;
+                    font-size: 0.8em;
+                    padding: 5px 10px;
+                    border-radius: 100px;
+                    background-color: black;
+
+                }
+
+                .IndexPageHeaderStagesText {
+                    font-size: 1em;
+                    color: black;
+                    text-transform: 600;
+
+                    &.true {
+                        color: #003153;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .IndexPageHeaderLogin {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 90%;
+            height: 10%;
+
+            .IndexPageHeaderLoginButton {
+                width: 40%;
+                padding: 20px 0px;
+                font-size: 1em;
+                border-radius: 10px;
+                opacity: 0.8;
+
+                &.true {
+                    background-color: #003153;
+                    color: white;
+                }
+
+                &.false {
+                    background-color: white;
+                    border: 2px solid #003153;
+                    color: #003153;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+
+            p {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .IndexPageMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 65%;
+        height: 100%;
+    }
+}
